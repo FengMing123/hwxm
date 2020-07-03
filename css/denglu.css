@@ -1,0 +1,124 @@
+@charset "utf-8";
+#thing{
+    width: 380px;
+    height: 530px;
+    margin: 20px auto;
+}
+.head{
+    width: 380px;
+    height: 20px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.zhdl,.smdl{
+    width: 160px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    color: #333;
+    padding: 0 10px;
+    font-weight: 500; 
+    cursor: pointer;
+    display: inline-block; 
+}
+.zhdl,.smdl:hover{
+    color: #be0000;
+}
+.zhdl{
+    border-right:1px solid #ccc ;
+}
+.a-yz{
+    width: 380px;
+    height: 246px;
+}
+.yz{
+    width: 380px;
+    height: 246px;
+    padding-top:15px ;
+}
+.num,.mima{
+    display: block;
+    width: 380px;
+    height: 46px;
+    border-bottom: 1px solid #ccc;
+}
+.userName,.passWord{
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    border:0;
+    border-radius: 0;
+    height: 46px;
+    line-height: 46px;
+}
+.dxyz{
+    width: 380px;
+    padding: 16px 0;
+    height: 13px;
+}
+.dxyz1{  
+    color: #007dff;
+    font-size: 12px;
+    cursor: pointer;
+}
+.dxyz1:hover{
+    color: #046ddd;
+}
+#button{
+    margin: 20px 0;
+    width: 378px;
+    height: 44px;
+    border: 1px solid #ccc;
+    border-radius: 26px;
+    color: #333;
+    cursor: pointer;
+    line-height: 44px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+#button:hover{
+    color: #fff;
+    background-color: #be0000;
+}
+.foot{
+    height: 12px;
+    width: 380px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+}
+.foot .foot1{
+    border: 0;
+}
+.foot span{
+    border-right:1px solid #ccc;
+    padding: 0 18px;
+    display: inline-block;
+    height: 12px;
+}
+.foot span a{
+    color: #046ddd;
+}
+.foot span a:hover{
+    color: #007dff;
+}
+.b-yz{
+    width: 380px;
+    height: 285px;
+}
+.ma{
+    width: 380px;
+    height: 262px;
+    background-color: yellowgreen;
+}
+.tishi{
+    width: 380px;
+    height: 22px;
+    margin-top: 10px;
+}
+.tishi p{
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}

@@ -1,0 +1,106 @@
+@charset "utf-8";
+body{
+    background-color: #fff; 
+}
+.gray-header-wrap,.mainContent-wrap{
+    width: 960px;
+    margin: 0 auto;
+}
+.gray-header-wrap{
+    height: 38.4px;
+    position: relative;
+}
+.left-logo{
+    margin-top: 9.6px;
+    float: left;
+    height: 19.2px;
+    width: 90.4px; 
+}
+.left-logo img{
+    height: 19.2px;
+}
+.web-name{
+   float: left;
+}
+.s-line{
+    width: 1px;
+    height: 16px;
+    margin: 11.2px 12.8px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.hwsc{
+    font-size: 12.8px;
+    margin-top: 11.2px;
+    color: #191919;
+    float: left;
+    font-weight: 700;
+}
+.mainContent{
+    min-height: 700px;
+}
+.reghw{
+    width: 768px;
+    padding-top: 48px;
+    height: 635px;
+    margin: 0 auto;
+}
+.regTitle{
+    text-align: center;
+    margin: 8px 0 48px;
+    color: #191919;
+}
+.h-regTitle{
+    font-size: 25.6px;
+}
+.reg-login-link{
+    margin-top: 6.4px;
+    font-size: 14.4px;
+}
+.qdl{
+    color: #007dff;
+}
+#user-tishi,#pass-tishi,#tpass-tishi{
+    color: #f80f0ff5;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 200px;
+}
+.sjh,.mima,.tmima{
+    width: 353.6px;
+    padding: 0 12.8px;
+    margin: auto;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    border-radius: 6.4px;
+
+}
+input::-webkit-input-placeholder{
+    color: rgb(175, 169, 169);
+}
+.usersjh,.userdx,.usermm,.usertmm{
+    width: 100%;height: 100%;
+    border: 0;
+    font-size: 12px;
+    background: transparent;
+}
+.btn-zc{
+    width: 352px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+}
+#btnZc{
+    width: 220.8px;
+    height: 38px;
+    font-size: 14px;
+    color: #fff;
+    background: #007dff;
+    opacity: 0.5;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6.4px;
+    padding: 0 12.8px;
+}

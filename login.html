@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为帐号-登录</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/denglu.css">
+</head>
+
+<body>
+    <div id="thing">
+        <div class="head">
+            <span class="zhdl">帐号登录</span>
+            <span class="smdl">扫码登录</span>
+        </div>
+        <div class="a-yz" style="display: block;">
+            <div class="yz">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td class="num">
+            
+                                <input type="text" class="userName" id="login_userName" placeholder="手机号">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="mima">
+                                
+                                <input type="password" class="passWord" id="login_passWord" placeholder="密码">
+                            </td>
+                        </tr>                      
+                        <tr>
+                            <td>
+                                <div style="height: 30px;line-height: 30px;font-size: 12px;margin-top: 10px;"><input style="margin-left: 230px; width: 20px;height: 20px;position: relative;top: 3px;" type="checkbox" name="" id="autologin"><label for="autologin">七天免登录</label></div>
+                                <div id="button">登录</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="foot">
+                                <span><a href="./reg.html">注册帐号</a></span>
+                                <span><a href="">忘记密码</a></span>
+                                <span class="foot1"><a href="">更多</a></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/cookieTools.js"></script>
+<script>
+$("#button").click(function(){
+
+    $.ajax({
+          type:'POST',
+          url:'./php/loginCheck.php',
+          data:{
+              'username':$("#login_userName").val(),
+              'userpass':$("#login_passWord").val()
+          },
+          dataType:'json',
+          success:function(data){
+            // console.log(data);
+            // alert(data.msg)
+            if(data.status=="1"){
+                alert('登录成功')
+                if($('#autologin').get(0).checked){
+                    setCookie({
+                        key : 'username',
+                        value :$("#login_userName").val(),
+                        days : '7',
+                    })
+                }else{
+                    setCookie({
+                        key : 'username',
+                        value : $$("#login_userName").val(),
+                    })
+                }
+                location.href='./hwsc.html'
+
+            }else if(data.status=="0"){
+                alert('登录失败')
+            }
+          }
+      })
+});
+</script>
+</html>
